@@ -1,0 +1,9 @@
+
+<div *ngFor="let curso of courses | async">
+    <div class="card" style="width: 100%; margin-top: 10px;">
+        <div class="card-body">
+            <h5 class="card.title">{{curso.description}}</h5>
+            <h5 class="card.title">{{curso.genero}}</h5>
+        </div>
+    </div>
+</div>

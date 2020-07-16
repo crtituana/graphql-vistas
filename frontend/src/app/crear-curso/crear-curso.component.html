@@ -1,0 +1,16 @@
+<body class="text-center">
+    <form [formGroup]="suForm" (ngSubmit)="crearCourse()" class="form-signin">
+        <h1 class="h4 mb-3 font-weight-normal">Crear Curso</h1>
+        <div class="form-group">
+            <label for="description" class="sr-only">Descripcion</label>
+            <input type="text" id="description" class="form-control" formControlName="description" placeholder="Descripcion" required autofocus>
+        </div>
+        <div class="form-group">
+            <label for="genero" class="sr-only">Email</label>
+            <input type="text" id="genero" class="form-control" formControlName="genero" placeholder="Genero" required >
+        </div>
+        <div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="suForm.invalid">Crear</button>
+        </div>
+    </form>
+</body>
